@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How TikTok Got So Smart</title>
+  <!-- TimelineJS styles -->
+  <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
+    #header {
+      text-align: center;
+      padding: 2rem;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    #header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    #timeline-embed {
+      width: 100%;
+      height: 650px;
+      margin: 1rem auto;
+      max-width: 1200px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1>How TikTok Got So Smart</h1>
+  </div>
+
+  <!-- Timeline container -->
+  <div id="timeline-embed"></div>
+
+  <!-- TimelineJS script -->
+  <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+  <script>
+    // Timeline data
+    var timelineData = {
+      "title": {
+        "text": {
+          "headline": "How TikTok Got So Smart",
+          "text": "<p>A journey through the evolution of TikTok's powerful recommendation algorithm from 2014 to today.</p>"
+        },
+        "media": {
+          "url": "img/header.jpeg",
+          "caption": "TikTok's For You algorithm"
+        }
+      },
+      "events": [
+        {
+          "start_date": {"year": "2014", "month": "1", "day": "1"},
+          "text": {
+            "headline": "Musical.ly Launches",
+            "text": "<p>Musical.ly burst onto the scene in 2014 as a social video app for 15-second to 1-minute lip-syncing clips. Teenagers (and even pre-teens) flocked to create quirky music videos with filters and effects. Its focus on easy-to-make, entertaining short-form content made it a hit – by 2016, Musical.ly had over 90 million users, a meteoric rise from just 10 million a year before. In fact, observers dubbed it 'the world's youngest app', since it uniquely captured a very young audience that other platforms had overlooked. Musical.ly showed that bite-sized videos + a creative community = a recipe for viral success, even though its content discovery relied more on trends and user-following than any fancy algorithm at this stage.</p><p><strong>Reflection:</strong> How did Musical.ly's focus on fun, lip-sync videos pave the way for the kind of content we now expect on TikTok's feed?</p>"
+          },
+          "media": {"url": "img/musically.jpg.png", "caption": "Musical.ly logo and interface"}
+        },
+        {
+          "start_date": {"year": "2016", "month": "9", "day": "1"},
+          "text": {
+            "headline": "Douyin Debuts in China",
+            "text": "<p>ByteDance (a tech startup founded in 2012) launched Douyin in China in 2016 – this was essentially TikTok's Chinese older sibling. Unlike Musical.ly's more manual exploration, Douyin was built from the ground up with a powerful AI-driven recommendation algorithm. Users in China were wowed by how quickly the app learned their tastes: Douyin reached 100 million users and a billion daily video views in its first year. How? ByteDance's algorithm watched every tap, like, and replay to figure out what videos people enjoyed. The short-video format supercharged the learning – each clip is only seconds long, so the app gathers feedback every few moments instead of every few minutes, dramatically speeding up personalization. Douyin's meteoric rise proved that an interest-based feed (showing you content you like, regardless of what your friends watch) could be wildly effective. This 'secret sauce' would soon be the backbone of TikTok. (Although ByteDance insists TikTok and Douyin are separate, their recommendation engines remain very similar.)</p><p><strong>Reflection:</strong> What's the advantage of an algorithm that learns your preferences in seconds? How might that change the way you discover new content?</p>"
+            },
+          "media": {"url": "img/douyin.jpg.png", "caption": "Douyin on a smartphone"}
+        },
+        {
+          "start_date": {"year": "2017", "month": "11", "day": "17"},
+          "text": {
+            "headline": "ByteDance Acquires Musical.ly",
+            "text": "<p>In November 2017, ByteDance (flush with Douyin's success) bought Musical.ly in a strategic $1 billion deal. For ByteDance, this was a golden opportunity: combine Musical.ly's huge international user base with Douyin's cutting-edge algorithm. At the time, Musical.ly was popular in the U.S. and Europe, but many users didn't even realize it had Chinese roots. ByteDance merged Musical.ly into a new global app, TikTok, by August 2018– effectively a rebranding that concealed the Chinese origin and made TikTok a truly worldwide platform. Industry observers later noted that 'without Musical.ly, TikTok wouldn't be TikTok,' since TikTok launched already stocked with millions of eager users migrated from Musical.ly. Interestingly, in Musical.ly's early days its founder emphasized social-network effects (who follows whom) over algorithms. But ByteDance had a different philosophy: why limit videos to your friends' taste when an AI can find what you love? This East-meets-West fusion set the stage for TikTok's unique feed.</p><p><strong>Reflection:</strong> Why do you think ByteDance was willing to spend so much to acquire Musical.ly? What did combining these platforms achieve that neither could do alone?</p>"},
+          "media": {"url": "img/acquisition.jpg.png", "caption": "Signing of the acquisition deal"}
+        },
+        {
+          "start_date": {"year": "2018", "month": "8", "day": "2"},
+          "text": {
+            "headline": "TikTok Goes Global",
+           "text": "<p>In 2018, TikTok officially launched globally, absorbing Musical.ly's users and introducing the world to the 'For You' page – a scrolling feed of videos tailored to your interests. This was a pivotal technical shift: instead of primarily seeing posts from friends, users opened TikTok to a stream of content hand-picked by the algorithm based on viewing habits. ByteDance spotlighted this For You feed as the defining feature of the new TikTok, calling it 'a curation of personalized video recommendations based on viewing preferences.'. The effect? People found themselves glued to their screens. The app felt almost psychic in guessing what you'd find entertaining. Media outlets struggled to describe this phenomenon – journalists talked about TikTok's 'secret sauce' and said the algorithm could 'read your mind,'' pulling you down a 'black hole' of addictive videos. By late 2018 and 2019, countless viral trends (dance challenges, comedy skits, etc.) were erupting on TikTok's For You page, demonstrating the unprecedented reach the recommendation system gave even ordinary creators. TikTok's algorithm wasn't just a piece of code – it was shaping culture, one customized feed at a time.</p><p><strong>Reflection:</strong> Have you ever wondered why a certain TikTok showed up on your For You page? What makes TikTok's feed feel so uniquely 'for you' compared to browsing a friend-based feed?</p>"},
+          "media": {"url": "img/for-you.jpg", "caption": "For You page on TikTok"}
+        },
+        {
+          "start_date": {"year": "2020", "month": "6", "day": "1"},
+          "text": {
+            "headline": "Backlash Over Algorithmic Bias",
+            "text": "<p>2020 was a turning point when TikTok's wildly smart algorithm faced accusations of unfairness and bias. As social justice movements rose, many Black creators and activists noticed something troubling: content tagged with #BlackLivesMatter or related to protests wasn't gaining traction, or videos were mysteriously vanishing from feeds. They began accusing TikTok of 'shadowbanning' – quietly hiding or downgrading their posts. At the height of the George Floyd protests, some Black Lives Matter videos sharply dropped in views on the For You page. (TikTok later claimed this was due to a 'technical glitch,' not deliberate suppression.) In June 2020, TikTok even issued a public apology to Black users who felt 'unsafe, unsupported, or suppressed' on the app. But it wasn't just Black creators raising alarms. Marginalized groups across the board – LGBTQ+ users, people with disabilities, plus-size individuals – shared anecdotes of their content being buried. A leaked report revealed that, early on, TikTok had actually instructed moderators to limit the reach of videos by users deemed 'high risk' for bullying, which included LGBTQ+ and disabled creators. The intention (to prevent these users from being harassed) was misguided and ended up punishing the very people it meant to protect. TikTok admitted this policy was 'blunt and flawed' and said it had long been discontinued. These revelations sparked public outcry. Users started campaigns (like the Black TikTok Strike) and openly questioned the platform: was the algorithm racially or politically biased? TikTok responded with pledges to do better – for example, launching diversity initiatives and inviting creators to roundtables – but trust had been dented.</p><p><strong>Reflection:</strong> If an algorithm is found to treat some groups of people differently, what responsibility does the platform have to fix it? How does bias (even unintentional) in what you see online affect community trust?</p>"},
+          "media": {"url": "img/shadowban.jpg.png", "caption": "Protesters calling out shadowbanning"}
+        },
+        {
+          "start_date": {"year": "2022", "month": "9", "day": "15"},
+          "text": {
+            "headline": "“Why This Video” Transparency Feature",
+            "text": "<p>By late 2022, TikTok took steps to demystify its algorithm for users. The company rolled out a new in-app feature called 'Why this video' – a button you can tap to see why a particular video was recommended on your For You page. For example, TikTok might reveal that 'You've liked similar videos,' or 'This video is popular in your region,' as the reasons it appeared. The explanations are brief and general, but the goal is transparency – TikTok acknowledged that people worry about a 'black box' algorithm, so it wanted to at least shed a bit of light on how content is selected. Users welcomed this feature, though it's far from revealing the full complexity of the recommendation system. Still, it represents a shift in TikTok's approach: the once-secretive algorithm is now something the company openly talks about and even explains to its users (at least in broad strokes). This change came as TikTok was under growing pressure worldwide to prove that its algorithm is responsible and not manipulated, so giving users a peek behind the curtain was a proactive move to build trust.</p><p><strong>Reflection:</strong> Does knowing why a video shows up make you feel better about the algorithm? What more would you want to know about how TikTok decides what to show you?</p>"},
+          "media": {"url": "img/why-video.jpg.svg", "caption": "Why This Video explanation popup"}
+        },
+        {
+          "start_date": {"year": "2023", "month": "5", "day": "10"},
+          "text": {
+            "headline": "Transparency and Accountability Center",
+            "text": "<p>Under intensifying scrutiny from governments and the public, TikTok in 2023 launched a grand Transparency and Accountability Center in Los Angeles. The idea was to let outsiders – regulators, academics, journalists – get a behind-the-scenes look at TikTok's content moderation and recommendation algorithms. In guided tours, TikTok showed interactive displays about how videos are reviewed and how the For You feed works, and even opened some of its code for inspection in a controlled environment. TikTok's COO touted these as 'unprecedented levels of transparency' meant to reassure people about the platform's integrity. However, reception to the Transparency Center was mixed at best. Many critics called it 'transparency theater,' suggesting it was more of a PR showcase than true accountability. Reporters noted that the center offered only high-level overviews and carefully scripted answers. One journalist described the experience as 'a lot of smoke and mirrors' – flashy screens and presentations, but no clear way to verify the algorithm isn't doing something fishy. Meanwhile, outside the center's walls, lawmakers continued grilling TikTok's CEO and threatening bans if the company couldn't prove its algorithm (and data practices) were safe. The criticism remains that, despite these gestures, TikTok's algorithm is still essentially a black box – only now it's housed in a glass museum. The company has responded by expanding access (planning more transparency centers in other countries) and even allowing third-party audits of its algorithm. The struggle in 2023 highlights a key question of our time: how much can we really know about the algorithms that curate our digital lives? TikTok is learning that being 'smart' isn't enough – it also has to earn users' and regulators' trust.</p><p><strong>Reflection:</strong> Do you feel more confident in a platform when it opens a Transparency Center or shares information about its algorithm? What would true algorithmic transparency look like to you?</p>"},
+          "media": {"url": "img/transparency.jpg", "caption": "Inside TikTok's Transparency Center"}
+        }
+      ]
+    };
+
+    // Initialize the timeline
+    window.timeline = new TL.Timeline('timeline-embed', timelineData, {
+      initial_zoom: 2,
+      timenav_position: 'bottom'
+    });
+  </script>
+</body>
+</html>
